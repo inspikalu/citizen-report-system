@@ -1,6 +1,7 @@
 const form = document.getElementById("requestForm")
 const submitButton = document.getElementById("submitButton")
-form.addEventListener("submit", () => {
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
     try {
 
         navigator.geolocation.getCurrentPosition(
