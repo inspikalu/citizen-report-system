@@ -35,7 +35,6 @@ const inputCategoryLabel = document.getElementById("input-category-label")
 const category = document.getElementById("category")
 
 category.addEventListener("change", (e) => {
-    console.log(e.target.value)
     if (e.target.value === "others") {
         inputCategory.style.display = "block"
         inputCategoryLabel.style.display = "block"
