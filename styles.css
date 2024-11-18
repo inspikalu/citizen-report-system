@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: 50%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.feedbackForm>label {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+option,
+select {
+  padding: .3rem;
+  margin-block: .3rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Feedback System</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Citizen Feedback and Reporting System</h1>
+        <form id="feedbackForm" class="feedbackForm">
+            <label>
+                <span>Name:</span>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+
+            <label>
+                <span>Email:</span>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <label>
+                <span>Category:</span>
+                <select id="category" required>
+                    <option value="Road Maintenance">Road Maintenance</option>
+                    <option value="Waste Management">Waste Management</option>
+                    <option value="Electricity Issues">Electricity Issues</option>
+                    <option value="Water Supply">Water Supply</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+
+            <label>
+                <span>Description:</span>
+                <textarea id="description" placeholder="Describe the issue" required></textarea>
+            </label>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        
+        <button id="submitButton">Submit Feedback w seasons</button>
+        <h2>Submitted Feedback</h2>
+        <ul id="feedbackList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
