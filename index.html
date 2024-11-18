@@ -115,6 +115,17 @@
             <label for="description">Description (max 250 characters):</label>
             <textarea id="description" name="description" maxlength="250" required placeholder="Describe what happened, add any important observations"></textarea>
 
+            <!-- Category -->
+             <label for="category">Category</label>
+             <select name="category" id="category">
+                <option value="" default>--------------- Select a category ---------------</option>
+                <option value="Road maintenance">Road Maintenance</option>
+                <option value="Waste overflow">Waste Overflow</option>
+                <option value="Electricity issues">Electricity Issues</option>
+                <option value="Water Supply">Water Supply</option>
+                <option value="other">Other</option>
+             </select>
+            
             <!-- Image Upload Field -->
             <label for="image">Upload Media:</label>
             <input type="file" id="image" name="image" accept="image/*">
