@@ -29,3 +29,20 @@ form.addEventListener("submit", (e) => {
 
 
 });
+
+const inputCategory = document.getElementById("input-category")
+const inputCategoryLabel = document.getElementById("input-category-label")
+const category = document.getElementById("category")
+
+category.addEventListener("change", (e) => {
+    console.log(e.target.value)
+    if (e.target.value === "others") {
+        inputCategory.style.display = "block"
+        inputCategoryLabel.style.display = "block"
+        inputCategory.setAttribute("required","true")
+    } else {
+        inputCategory.style.display = "none"
+        inputCategoryLabel.style.display = "none"
+        inputCategory.setAttribute("required","false")
+    }
+})

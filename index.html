@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drone Deployment Request</title>
+    <title>Citizen Feedback and Reporting System</title>
     <style>
         /* General Body Styling */
         body {
@@ -50,7 +50,7 @@
 
         input,
         textarea,
-        button {
+        button, select, option {
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -85,6 +85,9 @@
         .coat-of-arm{
             height: auto;
             width: 8rem;
+        }
+        #input-category-label,#input-category{
+            display: none;
         }
     </style>
 </head>
@@ -123,8 +126,11 @@
                 <option value="Waste overflow">Waste Overflow</option>
                 <option value="Electricity issues">Electricity Issues</option>
                 <option value="Water Supply">Water Supply</option>
-                <option value="other">Other</option>
+                <option value="others">Other</option>
              </select>
+
+             <label for="input-category" id="input-category-label">Please Input Category</label>
+             <input type="text" name="input-category" id="input-category" placeholder="Please enter custom category">
             
             <!-- Image Upload Field -->
             <label for="image">Upload Media:</label>
